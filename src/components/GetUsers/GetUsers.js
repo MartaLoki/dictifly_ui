@@ -1,32 +1,32 @@
 import './GetUsers.css';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
+import { Table } from 'semantic-ui-react';
 
 const GetUsers = ({users}) => {
   return (
     <div>
-        <Carousel>
+        <Table singleLine>
+        <Table.Header>
+                    <Table.Row>
+                        <Table.HeaderCell>First Name</Table.HeaderCell>
+                        <Table.HeaderCell>Last Name</Table.HeaderCell>
+                        <Table.HeaderCell>Age</Table.HeaderCell>
+                    </Table.Row>
+                </Table.Header>
             {
                 users.map(user =>{
                     return(
-                        <Paper>
-                            <div className="user-card-container">
-                                <div className="user-card">
-                                    <div className="user-detail">
-                                        <div className = "user-name">
-                                            <h4>{user.name}</h4>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </Paper>
+                        <Table.Row>
+                                <Table.Cell>{user.name}</Table.Cell>
+                                <Table.Cell>{user.surname}</Table.Cell>
+                                <Table.Cell>{user.age}</Table.Cell>
+                        </Table.Row>
                     )
                 } )
                    
             }
-
-        </Carousel>
+        </Table>
     </div>
   )
 }

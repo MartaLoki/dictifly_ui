@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import Layout  from './components/Layout';
 import {Routes, Route} from 'react-router-dom';
 import Home from './components/home/Home';
+import GetUsers from './components/GetUsers/GetUsers';
 
 function App() {
 
@@ -34,6 +35,7 @@ useEffect( () => {
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route path="/" element={<Home users={users} />} ></Route>
+          <Route path="/users" element={<GetUsers users={users} />} ></Route>
           
         </Route>
       </Routes>

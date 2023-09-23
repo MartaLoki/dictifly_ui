@@ -1,9 +1,15 @@
-import GetUsers from '../GetUsers/GetUsers';
+import './Home.css';
+import { Button, Container } from 'reactstrap';
+import {Link} from 'react-router-dom';
 
-const Home = ({users}) => {
+const Home = () => {
   return (
-    <GetUsers users= {users} />
-
+    <div className="main">
+        <h2 className="main-header">Aplikacja do nauki języka</h2>
+        <Container fluid>
+                    <Button color="link"><Link to="/users">Users</Link></Button>
+        </Container>
+    </div>
   )
 }
 
