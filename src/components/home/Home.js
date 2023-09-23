@@ -1,8 +1,8 @@
-import Hero from '../hero/Hero';
+import GetUsers from '../GetUsers/GetUsers';
 
 const Home = ({users}) => {
   return (
-    <Hero users= {users} />
+    <GetUsers users= {users} />
 
   )
 }

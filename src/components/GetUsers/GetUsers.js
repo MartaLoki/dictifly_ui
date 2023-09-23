@@ -1,8 +1,8 @@
-import './Hero.css';
+import './GetUsers.css';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
 
-const Hero = ({users}) => {
+const GetUsers = ({users}) => {
   return (
     <div>
         <Carousel>
@@ -31,4 +31,4 @@ const Hero = ({users}) => {
   )
 }
 
-export default Hero
+export default GetUsers
