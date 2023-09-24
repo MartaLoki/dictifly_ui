@@ -1,5 +1,5 @@
-import React, { useState, useHistory } from 'react';
-import { Button, Checkbox, Form } from 'semantic-ui-react'
+import React, { useState } from 'react';
+import { Button, Form } from 'semantic-ui-react'
 import api from '../../api/axiosConfig.js';
 
 
@@ -17,7 +17,8 @@ export default function Create() {
         <div>
             <Form className="create-form">
                 <Form.Field>
-                    <label>Unit Name</label>
+                    <label>Unit Name</label> 
+                    
                     <input value={unitName} onChange={(e) => setUnitName(e.target.value) }/>
                 </Form.Field>
                 <Button onClick={postData} type='submit'>Submit</Button>
