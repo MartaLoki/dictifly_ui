@@ -30,7 +30,7 @@ export default function Create() {
         <div>
             <Form className="create-form">
                 <Form.Field>
-                <h2 className="header">Add new Dictionary Itemt</h2> &nbsp;
+                <h2 className="header">Add new Dictionary Item</h2> &nbsp;
                 
             
                 <label>English</label> &nbsp;
@@ -44,6 +44,7 @@ export default function Create() {
                     <label>Unit Name</label> &nbsp;
                     <select   onChange={
                         (e) => setUnit((e.target.value))} >
+                        <option value=" Select Unit "> -- Select Unit-- </option>
                         {units.map((unit, i) => <option key={i} value={unit.id} >{unit.unitName}</option>)}
                     </select>
                         
