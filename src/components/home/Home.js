@@ -8,6 +8,7 @@ const Home = () => {
         <h2 className="main-header">Aplikacja do nauki języka</h2>
         <Container fluid>
                     <Button color="link"><Link to="/users">Users</Link></Button>
+                    <Button color="link"><Link to="/units">Units</Link></Button>
         </Container>
     </div>
   )
