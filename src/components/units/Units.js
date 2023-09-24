@@ -2,6 +2,8 @@
 import { Table } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import api from '../../api/axiosConfig.js';
+import { Button, Container } from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 export default function Read() {
 
@@ -19,7 +21,7 @@ export default function Read() {
             <Table singleLine>
             <Table.Header>
                         <Table.Row>
-                            <Table.HeaderCell>Unit Name</Table.HeaderCell>
+                            <Table.HeaderCell>Unit Name</Table.HeaderCell >
                         </Table.Row>
                     </Table.Header>
                 {
@@ -30,9 +32,11 @@ export default function Read() {
                             </Table.Row>
                         )
                     } )
-                    
                 }
             </Table>
+            <Container fluid>
+                    <Button color="success" tag={Link} to="/createUnit">Create Unit</Button>
+             </Container>
         </div>
     )
 }

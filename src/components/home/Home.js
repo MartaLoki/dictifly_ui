@@ -7,8 +7,8 @@ const Home = () => {
     <div className="main">
         <h2 className="main-header">Aplikacja do nauki języka</h2>
         <Container fluid>
-                    <Button color="link"><Link to="/users">Users</Link></Button>
-                    <Button color="link"><Link to="/units">Units</Link></Button>
+                    <Button color="success" tag={Link} to="/users">Users</Button>
+                    <Button color="success" tag={Link} to="/units">Units</Button>
         </Container>
     </div>
   )

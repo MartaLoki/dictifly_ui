@@ -10,8 +10,6 @@ export default function Create() {
         api.post(("/createUnit"), {
             unitName,
         })
-        setUnitName("");
-
         }
     
 
@@ -22,7 +20,6 @@ export default function Create() {
                     <label>Unit Name</label>
                     <input value={unitName} onChange={(e) => setUnitName(e.target.value) }/>
                 </Form.Field>
-        
                 <Button onClick={postData} type='submit'>Submit</Button>
             </Form>
         </div>
