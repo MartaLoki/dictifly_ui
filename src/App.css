@@ -28,6 +28,23 @@
   color: #e9eef0;
 }
 
+.create-form{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #383266;
+  color: whitesmoke;
+  flex-direction: column;
+}
+
+
+.create-form label{
+  color: whitesmoke !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px !important;
+}
+
 
 @keyframes App-logo-spin {
   from {

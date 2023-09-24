@@ -17,11 +17,11 @@ export default function Create() {
     return (
         <div>
             <Form className="create-form">
+                <h2 className="header">Create new Unit</h2> &nbsp;
                 <Form.Field>
-                    <label>Unit Name</label> 
-                    
+                    <label>Unit Name</label> &nbsp;
                     <input value={unitName} onChange={(e) => setUnitName(e.target.value) }/>
-                </Form.Field>
+                </Form.Field> &nbsp; &nbsp;
                 <Button onClick={postData} type='submit'>Submit</Button>
             </Form>
         </div>

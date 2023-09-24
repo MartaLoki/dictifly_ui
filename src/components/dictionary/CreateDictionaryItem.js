@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Form } from 'semantic-ui-react'
+import { Button, Form, Container } from 'semantic-ui-react'
 import api from '../../api/axiosConfig.js';
 
 export default function Create() {
@@ -30,29 +30,27 @@ export default function Create() {
         <div>
             <Form className="create-form">
                 <Form.Field>
-                    <label>English</label> 
+                <h2 className="header">Add new Dictionary Itemt</h2> &nbsp;
+                
+            
+                <label>English</label> &nbsp;
                     <input value={english} onChange={(e) => setEnglish(e.target.value) }/>
                 </Form.Field> &nbsp;
                 <Form.Field>
-                    <label>Polish</label> 
+                    <label>Polish</label> &nbsp;
                     <input value={polish} onChange={(e) => setPolish(e.target.value) }/>
                 </Form.Field> &nbsp;
                 <Form.Field>
-                    <label>Unit</label> 
+                    <label>Unit Name</label> &nbsp;
                     <select   onChange={
                         (e) => setUnit((e.target.value))} >
                         {units.map((unit, i) => <option key={i} value={unit.id} >{unit.unitName}</option>)}
                     </select>
                         
-
-  
-               
-               
+                </Form.Field>
+                &nbsp;
+                <Button color="success" onClick={postData} type='submit'>Submit</Button>
                 
-
-                </Form.Field> &nbsp;
-
-                <Button onClick={postData} type='submit'>Submit</Button>
                 
             </Form>
         </div>
