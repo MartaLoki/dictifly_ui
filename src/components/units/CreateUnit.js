@@ -10,6 +10,7 @@ export default function Create() {
         api.post(("/createUnit"), {
             unitName,
         })
+        setUnitName("");
         }
     
 
