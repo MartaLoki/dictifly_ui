@@ -4,6 +4,7 @@ import Home from './components/home/Home';
 import GetUsers from './components/getUsers/GetUsers';
 import Units from './components/units/Units';
 import CreatUnit from './components/units/CreateUnit';
+import CreateDictionaryItem from './components/dictionary/CreateDictionaryItem';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/users" element={<GetUsers />} ></Route>
           <Route path="/units" element={<Units />} ></Route>
           <Route path="/createUnit" element={<CreatUnit />} ></Route>
+          <Route path="/createDictionaryItem" element={<CreateDictionaryItem />} ></Route>
           
       
       </Routes>
