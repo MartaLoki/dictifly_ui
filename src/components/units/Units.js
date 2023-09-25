@@ -18,7 +18,8 @@ export default function Read() {
 
     const unitsList = units.map(unit => {
         return <tr key={unit.id}>
-            <td >{unit.unitName}</td>
+            <td>{unit.unitName}</td>
+            <td><Button size="sm" color="success"  tag={Link} to="/createTest">Test</Button></td>
         </tr>
     });
 
@@ -34,6 +35,7 @@ export default function Read() {
                     <thead>
                     <tr>
                         <th>Units</th>
+                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>

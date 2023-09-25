@@ -6,6 +6,7 @@ import Units from './components/units/Units';
 import CreatUnit from './components/units/CreateUnit';
 import CreateDictionaryItem from './components/dictionary/CreateDictionaryItem';
 import DictionaryItems from './components/dictionary/DictionaryItems';
+import Test from './components/test/Test';
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/createUnit" element={<CreatUnit />} ></Route>
           <Route path="/createDictionaryItem" element={<CreateDictionaryItem />} ></Route>
           <Route path="/dictionaryItems" element={<DictionaryItems />} ></Route>
+          <Route path="/createTest" element={<Test />} ></Route>
       </Routes>
     </div>
   );
