@@ -40,7 +40,7 @@ export default function Read() {
     return (
         <div>
             <Container fluid>
-                <h2 className="table-header" >Dictionary</h2>
+                <h2 className="sub-header" >Dictionary</h2>
                     <div className="button-right">
                         <Button color="success" tag={Link} to="/createDictionaryItem">Create Dictionary Item</Button>
                     </div>

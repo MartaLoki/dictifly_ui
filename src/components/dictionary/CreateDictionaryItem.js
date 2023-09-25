@@ -30,7 +30,7 @@ export default function Create() {
         <div>
             <Form className="create-form">
                 <Form.Field>
-                <h2>Add new Dictionary Item</h2> &nbsp;
+                <h2 className= "sub-header"> Add new Dictionary Item</h2> &nbsp;
                 
             
                 <label>English</label> &nbsp;

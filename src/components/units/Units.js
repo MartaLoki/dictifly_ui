@@ -16,27 +16,31 @@ export default function Read() {
             })
     }, []);
 
+    const unitsList = units.map(unit => {
+        return <tr key={unit.id}>
+            <td >{unit.unitName}</td>
+        </tr>
+    });
+
     return (
+
         <div>
-            <Table singleLine>
-            <Table.Header>
-                        <Table.Row>
-                            <Table.HeaderCell>Unit Name</Table.HeaderCell >
-                        </Table.Row>
-                    </Table.Header>
-                {
-                    units.map(unit =>{
-                        return(
-                            <Table.Row>
-                                    <Table.Cell>{unit.unitName}</Table.Cell>
-                            </Table.Row>
-                        )
-                    } )
-                }
-            </Table>
-            <Container fluid>
-                    <Button color="success" tag={Link} to="/createUnit">Create Unit</Button>
-             </Container>
-        </div>
+        <Container fluid>
+            <h2 className="sub-header" >Units</h2>
+                <div className="button-right">
+                <Button color="success" tag={Link} to="/createUnit">Create Unit</Button>
+                </div>
+            <Table style={{textAlign:"center"}}>
+                    <thead>
+                    <tr>
+                        <th>Units</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {unitsList}
+                    </tbody>
+                    </Table>
+        </Container>
+    </div>
     )
 }

@@ -1,5 +1,5 @@
 import './GetUsers.css';
-import { Table } from 'semantic-ui-react';
+import { Table, Container, Button } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import api from '../../api/axiosConfig.js';
 
@@ -14,8 +14,37 @@ export default function Read() {
             })
     }, []);
 
+    const usersList = users.map(user => {
+        return <tr key={user.id}>
+            <td >{user.name}</td>
+            <td >{user.surname}</td>
+            <td >{user.age}</td>
+        </tr>
+    });
+
     return (
-        <div>
+        <Container fluid>
+            <h2 className="sub-header" >Users</h2>
+                <div className="button-right">
+                </div>
+            <Table style={{textAlign:"left"}}>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>Age</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {usersList}
+                    </tbody>
+                    </Table>
+        </Container>
+
+
+
+        /* <div>
             <Table singleLine>
             <Table.Header>
                         <Table.Row>
@@ -37,6 +66,6 @@ export default function Read() {
                     
                 }
             </Table>
-        </div>
+        </div> */
     )
 }

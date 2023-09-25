@@ -17,9 +17,7 @@ function App() {
           <Route path="/createUnit" element={<CreatUnit />} ></Route>
           <Route path="/createDictionaryItem" element={<CreateDictionaryItem />} ></Route>
           <Route path="/dictionaryItems" element={<DictionaryItems />} ></Route>
-          
       </Routes>
-
     </div>
   );
 }
