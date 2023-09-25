@@ -28,6 +28,13 @@
   color: #e9eef0;
 }
 
+.table-header {
+  background-color: #383266;
+  color: whitesmoke;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
 .create-form{
   display: flex;
   justify-content: flex-start;
@@ -43,6 +50,12 @@
   color: whitesmoke !important;
   font-family: 'Montserrat', sans-serif;
   font-size: 22px !important;
+}
+
+.button-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 
 

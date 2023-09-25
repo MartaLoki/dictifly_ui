@@ -30,7 +30,7 @@ export default function Create() {
         <div>
             <Form className="create-form">
                 <Form.Field>
-                <h2 className="header">Add new Dictionary Item</h2> &nbsp;
+                <h2>Add new Dictionary Item</h2> &nbsp;
                 
             
                 <label>English</label> &nbsp;
@@ -57,9 +57,4 @@ export default function Create() {
         </div>
     )
 }
-
-{/* <select>
-onChange={e => this.setUnit({selectedUnit: e.target.value})}
-
-</select> */}
 
