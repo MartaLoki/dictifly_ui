@@ -3,7 +3,7 @@ import { Table } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import api from '../../api/axiosConfig.js';
 import { Button, Container } from 'reactstrap';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 
 export default function Read() {
 
@@ -19,9 +19,9 @@ export default function Read() {
     const unitsList = units.map(unit => {
         return <tr key={unit.id}>
             <td>{unit.unitName}</td>
-            <td><Button size="sm" color="success"  tag={Link} to="/createTest">Test</Button></td>
+            <td><Button size="sm" color="success"  tag={Link} to={`/test/${unit.id}`}>Test</Button></td>
         </tr>
-    });
+    }); 
 
     return (
 

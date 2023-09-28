@@ -21,10 +21,6 @@ export default function Read() {
         setItems(newItems)
     }
         
-        
-
-
-
 
     const itemsList = items.map(item => {
         return <tr key={item.id}>

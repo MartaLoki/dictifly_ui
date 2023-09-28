@@ -42,30 +42,5 @@ export default function Read() {
                     </Table>
         </Container>
 
-
-
-        /* <div>
-            <Table singleLine>
-            <Table.Header>
-                        <Table.Row>
-                            <Table.HeaderCell>First Name</Table.HeaderCell>
-                            <Table.HeaderCell>Last Name</Table.HeaderCell>
-                            <Table.HeaderCell>Age</Table.HeaderCell>
-                        </Table.Row>
-                    </Table.Header>
-                {
-                    users.map(user =>{
-                        return(
-                            <Table.Row>
-                                    <Table.Cell>{user.name}</Table.Cell>
-                                    <Table.Cell>{user.surname}</Table.Cell>
-                                    <Table.Cell>{user.age}</Table.Cell>
-                            </Table.Row>
-                        )
-                    } )
-                    
-                }
-            </Table>
-        </div> */
     )
 }
