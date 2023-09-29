@@ -58,6 +58,14 @@
   align-items: flex-end;
 }
 
+.submit-button {
+  color: whitesmoke !important;
+  background-color: #05824c;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
 
 @keyframes App-logo-spin {
   from {

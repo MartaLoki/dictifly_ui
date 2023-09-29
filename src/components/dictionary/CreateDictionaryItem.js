@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Form, Container } from 'semantic-ui-react'
 import api from '../../api/axiosConfig.js';
+import {Link} from 'react-router-dom';
+import AppNavbar from '../AppNavbar';
 
 export default function Create() {
     const [polish, setPolish] = useState('');
@@ -28,11 +30,11 @@ export default function Create() {
 
     return (
         <div>
+            <AppNavbar/>
             <Form className="create-form">
                 <Form.Field>
                 <h2 className= "sub-header"> Add new Dictionary Item</h2> &nbsp;
-                
-            
+    
                 <label>English</label> &nbsp;
                     <input value={english} onChange={(e) => setEnglish(e.target.value) }/>
                 </Form.Field> &nbsp;
@@ -50,7 +52,7 @@ export default function Create() {
                         
                 </Form.Field>
                 &nbsp;
-                <Button color="success" onClick={postData} type='submit'>Submit</Button>
+                <Button className="submit-button" onClick={postData} type='submit'>Submit</Button>
                 
                 
             </Form>

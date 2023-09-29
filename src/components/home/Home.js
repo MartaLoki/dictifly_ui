@@ -13,8 +13,6 @@ const Home = () => {
                     <Button color="success" tag={Link} to="/users">Users</Button> &nbsp;
                     <Button color="success" tag={Link} to="/units">Units</Button> &nbsp;
         </Container> 
-       
-        
     </div>
   )
 }

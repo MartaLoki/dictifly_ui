@@ -1,7 +1,7 @@
-import './GetUsers.css';
 import { Table, Container, Button } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import api from '../../api/axiosConfig.js';
+import AppNavbar from '../AppNavbar';
 
 export default function Read() {
 
@@ -23,7 +23,10 @@ export default function Read() {
     });
 
     return (
-        <Container fluid>
+        <div> 
+            <AppNavbar/>
+            <Container fluid>
+            
             <h2 className="sub-header" >Users</h2>
                 <div className="button-right">
                 </div>
@@ -41,6 +44,10 @@ export default function Read() {
                     </tbody>
                     </Table>
         </Container>
+
+        </div>
+        
+        
 
     )
 }
