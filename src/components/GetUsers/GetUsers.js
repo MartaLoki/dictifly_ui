@@ -1,4 +1,4 @@
-import { Table, Container } from 'semantic-ui-react';
+import { Table, Container, Button } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import api from '../../api/axiosConfig.js';
 import AppNavbar from '../AppNavbar';
@@ -18,7 +18,9 @@ export default function Read() {
         return <tr key={user.id}>
             <td >{user.name}</td>
             <td >{user.surname}</td>
-            <td >{user.age}</td>
+            <td>
+                <Button className="submit-button" size="sm" color="success" >Test Results</Button>
+            </td>
         </tr>
     });
 
@@ -28,12 +30,12 @@ export default function Read() {
             <Container fluid>
             
             <h2 className="sub-header" >Users</h2>
-            <Table style={{textAlign:"left"}}>
+            <Table style={{textAlign:"center"}}>
                     <thead>
                     <tr>
                         <th>Name</th>
                         <th>Surname</th>
-                        <th>Age</th>
+                        <th>Test Results</th>
                         
                     </tr>
                     </thead>
