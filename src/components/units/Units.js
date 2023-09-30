@@ -3,7 +3,7 @@ import { Table } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import api from '../../api/axiosConfig.js';
 import { Button, Container } from 'reactstrap';
-import {Link, useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import AppNavbar from '../AppNavbar';
 
 export default function Read() {

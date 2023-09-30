@@ -66,6 +66,13 @@
 
 }
 
+.submit-button:disabled {
+  color: rgb(169, 163, 163) !important;
+  background-color: #05824c;
+  border-radius: 5px;
+  padding: 5px;
+}
+
 
 @keyframes App-logo-spin {
   from {

@@ -1,4 +1,4 @@
-import { Table, Container, Button } from 'semantic-ui-react';
+import { Table, Container } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
 import api from '../../api/axiosConfig.js';
 import AppNavbar from '../AppNavbar';
@@ -28,8 +28,6 @@ export default function Read() {
             <Container fluid>
             
             <h2 className="sub-header" >Users</h2>
-                <div className="button-right">
-                </div>
             <Table style={{textAlign:"left"}}>
                     <thead>
                     <tr>

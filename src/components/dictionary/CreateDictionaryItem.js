@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Form, Container } from 'semantic-ui-react'
+import { Button, Form } from 'semantic-ui-react'
 import api from '../../api/axiosConfig.js';
-import {Link} from 'react-router-dom';
 import AppNavbar from '../AppNavbar';
 
 export default function Create() {
